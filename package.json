@@ -1,0 +1,26 @@
+{
+  "name": "smart-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstaAT1/smart-stream.git"
+  },
+  "keywords": [],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AstaAT1/smart-stream/issues"
+  },
+  "homepage": "https://github.com/AstaAT1/smart-stream#readme",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.7"
+  }
+}
