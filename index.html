@@ -1,15 +1,266 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Smart Stream | Accueil</title>
 
-    <script type="module" src="./js/app.js"></script>
+    <link rel="icon" href="/assets/SmartStreamLogoSmall.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#080808] text-white font-sans">
+
+    <div class="min-h-screen flex flex-col md:flex-row">
+
+        <!-- SIDEBAR -->
+        <div class="w-full md:w-64 lg:w-72 md:min-h-screen md:sticky md:top-0 md:h-screen bg-[#101010] border-r border-white/10 flex flex-col">
+
+            <!-- LOGO -->
+            <div class="flex justify-center items-center py-8 px-5 border-b border-white/10">
+                <img src="/assets/SmartStreamLogoLarge.png"
+                     alt="Smart Stream"
+                     class="w-44 object-contain">
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav class="flex flex-col gap-3 p-4">
+
+                <a href="index.html"
+                   class="flex items-center gap-4 bg-gradient-to-r from-red-700 to-red-950 px-5 py-4 rounded-xl font-semibold">
+                    <i class="fa-solid fa-house text-lg"></i>
+                    Accueil
+                </a>
+
+                <!-- CATEGORIES -->
+                <div class="group flex flex-col gap-2">
+                    <div class="flex items-center justify-between px-5 py-4 rounded-xl cursor-pointer hover:bg-white/10 transition list-none">
+                        <span class="flex items-center gap-4">
+                            <i class="fa-solid fa-layer-group text-lg"></i>
+                            Catégories
+                        </span>
+                        <i class="fa-solid fa-chevron-down text-xs group-open:rotate-180 transition-transform"></i>
+                    </div>
+
+                    <div class="flex flex-col gap-1 pl-8 text-sm text-gray-400">
+
+                        <a href="" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600/20 hover:text-white">
+                            <i class="fa-solid fa-compass"></i>
+                            Documentaires
+                        </a>
+
+                        <a href="" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600/20 hover:text-white">
+                            <i class="fa-solid fa-film"></i>
+                            Films
+                        </a>
+
+                        <a href="" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600/20 hover:text-white">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            Séries
+                        </a>
+
+                        <a href="" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600/20 hover:text-white">
+                            <i class="fa-solid fa-trophy"></i>
+                            Sports
+                        </a>
+
+                        <a href="" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600/20 hover:text-white">
+                            <i class="fa-solid fa-newspaper"></i>
+                            Actualités
+                        </a>
+
+                        <a href="" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-600/20 hover:text-white">
+                            <i class="fa-solid fa-music"></i>
+                            Musique
+                        </a>
+                    </div>
+                </div>
+
+                <a href=""
+                   class="flex items-center gap-4 px-5 py-4 rounded-xl hover:bg-white/10 transition">
+                    <i class="fa-solid fa-tv text-lg"></i>
+                    Chaines TV
+                </a>
+
+            </nav>
+
+        </div>
+
+        <!-- MAIN -->
+        <main class="flex-1 min-w-0">
+
+            <!-- TOP HEADER -->
+            <div class="flex justify-between items-center px-6 lg:px-10 py-5 border-b border-white/10">
+
+                <h2 class="flex items-center gap-2 text-sm font-medium text-gray-400">
+                    <i class="fa-solid fa-house text-red-500"></i>
+                    Accueil
+                </h2>
+
+                <div class="flex items-center gap-5">
+                    <span class="inline-flex items-center gap-1 text-xs text-red-500 font-semibold">
+                        <i class="fa-solid fa-circle text-[8px]"></i>
+                        LIVE TV
+                    </span>
+
+                    <div class="w-9 h-9 rounded-full bg-[#252525] flex items-center justify-center">
+                        <i class="fa-solid fa-user text-gray-300"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col gap-10 p-5 md:p-7 lg:p-9">
+
+                <!-- HERO SECTION -->
+                <section class="relative min-h-[320px] md:min-h-[360px] rounded-2xl overflow-hidden border border-white/10 flex items-center">
+
+                    <div class="absolute inset-0 bg-cover bg-center"
+                         style="background-image: url('/assets/backgroundHome.png');">
+                    </div>
+
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-transparent"></div>
+
+                    <div class="relative z-10 max-w-xl p-7 md:p-12 flex flex-col items-start gap-5">
+
+                        <p class="text-lg md:text-xl font-semibold">
+                            Bienvenue sur
+                        </p>
+
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold">
+                            Smart <span class="text-red-600">Stream</span>
+                        </h1>
+
+                        <p class="text-gray-300 text-sm md:text-base">
+                            Votre plateforme de télévision en direct.
+                            Découvrez vos chaines préférées, explorez
+                            différentes catégories et profitez d'une
+                            expérience simple et moderne.
+                        </p>
+
+                        <a href=""
+                           class="flex items-center gap-3 bg-red-600 hover:bg-red-700 px-7 py-3.5 rounded-lg font-semibold transition">
+                            <i class="fa-solid fa-play"></i>
+                            Explorer les chaines
+                        </a>
+
+                    </div>
+                </section>
+
+                <!-- INTRODUCTION -->
+                <section class="flex flex-col gap-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-1 h-8 bg-red-600 rounded-full"></div>
+                        <h2 class="text-2xl font-bold">
+                            Découvrez Smart Stream
+                        </h2>
+                    </div>
+
+                    <p class="text-gray-400 max-w-4xl">
+                        Smart Stream vous permet de découvrir vos chaines
+                        de télévision à travers une interface moderne et intuitive.
+                        Naviguez entre les catégories, trouvez facilement une
+                        chaine et consultez ses informations ainsi que son aperçu
+                        en quelques clics.
+                    </p>
+                </section>
+
+                <!-- CATEGORIES SECTION -->
+                <section id="categories" class="flex flex-col gap-6">
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-1 h-8 bg-red-600 rounded-full"></div>
+                            <h2 class="text-2xl font-bold">
+                                Explorer par catégories
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+
+                        <div class="w-full sm:w-[48%] lg:w-[31%] 2xl:w-[15%] flex flex-col items-center gap-4 bg-[#191919] border border-white/10 rounded-xl p-6 text-center hover:border-red-600 hover:bg-red-950/20 transition cursor-pointer">
+                            <i class="fa-solid fa-compass text-3xl text-red-500"></i>
+                            <h3 class="font-semibold">Documentaires</h3>
+                        </div>
+
+                        <div class=" w-full sm:w-[48%] lg:w-[31%] 2xl:w-[15%] flex flex-col items-center gap-4 bg-[#191919] border border-white/10 rounded-xl p-6 text-center hover:border-red-600 hover:bg-red-950/20 transition cursor-pointer">
+                            <i class="fa-solid fa-film text-3xl text-red-500"></i>
+                            <h3 class="font-semibold">Films</h3>
+                        </div>
+
+                        <div class="w-full sm:w-[48%] lg:w-[31%] 2xl:w-[15%] flex flex-col items-center gap-4 bg-[#191919] border border-white/10 rounded-xl p-6 text-center hover:border-red-600 hover:bg-red-950/20 transition cursor-pointer">
+                            <i class="fa-solid fa-clapperboard text-3xl text-red-500"></i>
+                            <h3 class="font-semibold">Séries</h3>
+                        </div>
+
+                        <div class="w-full sm:w-[48%] lg:w-[31%] 2xl:w-[15%] flex flex-col items-center gap-4 bg-[#191919] border border-white/10 rounded-xl p-6 text-center hover:border-red-600 hover:bg-red-950/20 transition cursor-pointer">
+                            <i class="fa-solid fa-trophy text-3xl text-red-500"></i>
+                            <h3 class="font-semibold">Sports</h3>
+                        </div>
+
+                        <div class=" w-full sm:w-[48%] lg:w-[31%] 2xl:w-[15%] flex flex-col items-center gap-4 bg-[#191919] border border-white/10 rounded-xl p-6 text-center hover:border-red-600 hover:bg-red-950/20 transition cursor-pointer">
+                            <i class="fa-solid fa-newspaper text-3xl text-red-500"></i>
+                            <h3 class="font-semibold">Actualités</h3>
+                        </div>
+
+                        <div class=" w-full sm:w-[48%] lg:w-[31%] 2xl:w-[15%] flex flex-col items-center gap-4 bg-[#191919] border border-white/10 rounded-xl p-6 text-center hover:border-red-600 hover:bg-red-950/20 transition cursor-pointer">
+                            <i class="fa-solid fa-music text-3xl text-red-500"></i>
+                            <h3 class="font-semibold">Musique</h3>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- HOW IT WORKS -->
+                <section class="flex flex-col gap-7 bg-[#151515] border border-white/10 rounded-2xl p-7 md:p-9">
+
+                    <h2 class="text-2xl font-bold">
+                        Comment ça marche ?
+                    </h2>
+
+                    <div class="flex flex-col md:flex-row gap-7">
+
+                        <div class=" flex flex-col gap-2">
+                            <span class="text-red-500 text-3xl font-bold">01</span>
+                            <h3 class="font-semibold">Choisissez une catégorie</h3>
+                            <p class="text-gray-400 text-sm">
+                                Explorez les différentes catégories de chaines disponibles.
+                            </p>
+                        </div>
+
+                        <div class=" flex flex-col gap-2">
+                            <span class="text-red-500 text-3xl font-bold">02</span>
+                            <h3 class="font-semibold">Trouvez votre chaine</h3>
+                            <p class="text-gray-400 text-sm">
+                                Recherchez une chaine par son nom ou son numéro.
+                            </p>
+                        </div>
+
+                        <div class=" flex flex-col gap-2">
+                            <span class="text-red-500 text-3xl font-bold">03</span>
+                            <h3 class="font-semibold">Découvrez son aperçu</h3>
+                            <p class="text-gray-400 text-sm">
+                                Sélectionnez une chaine pour consulter son aperçu et ses informations.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- FOOTER -->
+                <footer class="border-t border-white/10 pt-6 text-center text-sm text-gray-500">
+                    Smart Stream — Votre expérience TV en direct.
+                </footer>
+
+            </div>
+
+        </main>
+
+    </div>
+
 </body>
 </html>
