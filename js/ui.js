@@ -1,3 +1,4 @@
+import {searchProducts} from './search.js'
 const category = document.querySelector('#categoryView')
 const section1 = document.querySelector('#section1')
 const section2 = document.querySelector('#section2')
@@ -98,11 +99,17 @@ export function renderChannels(arr) {
     }).join("")
     function selectChannel(arr) {
     const cardChannel = document.querySelectorAll('.channel-card')
+    const previewImage = document.querySelector('#previewImage')
+    const previewName = document.querySelector('#previewName')
     console.log(cardChannel.length)
     console.log("Cards found:", cardChannel.length)
     cardChannel.forEach( function(e , index){
         e.addEventListener('click' , function () {
             const selectedChannel = arr[index]
+            previewImage.src = selectedChannel.previewImage
+            previewName.textContent = selectedChannel.name
+            previewImage.classList.remove('hidden')
+            cardChannel.forEach()
             console.log(selectedChannel)
         })
     })
