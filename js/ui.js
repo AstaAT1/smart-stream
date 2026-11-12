@@ -1,4 +1,4 @@
-import {searchProducts} from './search.js'
+import {searchChannels} from './search.js'
 const category = document.querySelector('#categoryView')
 const section1 = document.querySelector('#section1')
 const section2 = document.querySelector('#section2')
@@ -9,6 +9,8 @@ const sports = document.querySelector('#sports')
 const actualites = document.querySelector('#actualites')
 const musique = document.querySelector('#musique')
 const channelsList = document.querySelector('#channelsList')
+const searchChannel = document.querySelector('#searchChannel')
+let currentChannels = []
 
 function showCategory() {
     category.classList.remove('hidden')
@@ -24,38 +26,45 @@ export function change(arr) {
     documentaires.addEventListener('click', function () {
         showCategory()
         const arrdata = filterByCategory(arr, 'Documentaires')
-        renderChannels(arrdata)
+        currentChannels = arrdata
+        renderChannels(currentChannels)
     })
 
     films.addEventListener('click', function () {
         showCategory()
         const arrdata = filterByCategory(arr, 'Films')
-        renderChannels(arrdata)
+                currentChannels = arrdata
+            renderChannels(currentChannels)
     })
 
     series.addEventListener('click', function () {
         showCategory()
         const arrdata = filterByCategory(arr, 'Séries')
-        renderChannels(arrdata)
+                currentChannels = arrdata
+            renderChannels(currentChannels)
     })
 
     sports.addEventListener('click', function () {
         showCategory()
         const arrdata = filterByCategory(arr, 'Sports')
-        renderChannels(arrdata)
+                currentChannels = arrdata
+              renderChannels(currentChannels)
     })
 
     musique.addEventListener('click', function () {
         showCategory()
         const arrdata = filterByCategory(arr, 'Musique')
-        renderChannels(arrdata)
+                currentChannels = arrdata
+              renderChannels(currentChannels)
     })
 
     actualites.addEventListener('click', function () {
         showCategory()
         const arrdata = filterByCategory(arr, 'Actualités')
-        renderChannels(arrdata)
+                currentChannels = arrdata
+              renderChannels(currentChannels)
     })
+    handelSearch()
 }
 export function filterByCategory(channels, selectedCategory) {
     const filterCategory = channels.filter(function (channel) {
@@ -109,12 +118,18 @@ export function renderChannels(arr) {
             previewImage.src = selectedChannel.previewImage
             previewName.textContent = selectedChannel.name
             previewImage.classList.remove('hidden')
-            cardChannel.forEach()
             console.log(selectedChannel)
         })
     })
 }
 selectChannel(arr)
+}
+function handelSearch() {
+    searchChannel.addEventListener('input' , function () {
+        const valueSearch = searchChannel.value.trim()
+        const result = searchChannels(currentChannels , valueSearch)
+        renderChannels(result)
+    })
 }
 
 
